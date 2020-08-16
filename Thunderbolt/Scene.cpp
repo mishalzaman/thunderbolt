@@ -5,10 +5,10 @@ Scene::Scene(unsigned int screenWidth, unsigned int screenHeight, const char* sc
 	screenHeight(screenHeight),
 	sceneDataFilePath(sceneDataFilePath)
 {
-	this->setProjectionMat4();
-	this->setShaders();
 	this->setSceneData();
 	this->setTextures();
+	this->setProjectionMat4();
+	this->setShaders();
 	this->setBatchProcesses();
 }
 
@@ -42,7 +42,7 @@ void Scene::renderTileMap()
 	//	}
 	//}
 
-	this->tileMapRenderer->render(*this->shader, *this->tileTexture, glm::vec2(32.0f, 32.0f), glm::vec2(this->sceneData->tileWidth, this->sceneData->tileHeight), 0.0f);
+	this->tileMapRenderer->render(*this->shader, *this->tileTexture, glm::vec2(0.0f, 0.0f), glm::vec2(this->sceneData->tileWidth, this->sceneData->tileHeight), 0.0f);
 }
 
 void Scene::load()
@@ -53,6 +53,10 @@ void Scene::load()
 
 	shader->use();
 	shader->setMat4("projection", this->projection);
+
+	shader->setInt("image", 0);
+	glActiveTexture(GL_TEXTURE0);
+	this->tileTexture->bind();
 }
 
 void Scene::setSceneData()
