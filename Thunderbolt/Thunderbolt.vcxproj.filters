@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{c82a2d31-7185-403b-bab2-ef61442a08af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{c6959ad9-68b9-4995-a9ae-9ffc5cddfe32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{367f3bf3-2710-4b8c-81af-4c47ec1c21c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="programs">
+      <UniqueIdentifier>{0e057b33-6f69-44d8-bd05-713a85d68a59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{dae141ff-69b3-451b-abba-a6032c5a48c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{6dbd3fa9-c733-4747-a587-a672264e55f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{ebef1014-d199-4cfa-94e0-7718819cdc33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{0dac499d-bfd1-4cf9-b45e-69e0512495f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{bb1ceb8e-6de7-4f4b-8fd9-4008bbd8e032}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfSDL.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfOpenGL.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyInput.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSprite.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDraw.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2d.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderBatch.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pugixml.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneData.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfSDL.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfOpenGL.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyInput.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSprite.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDraw.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2d.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBatch.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pugiconfig.hpp">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pugixml.hpp">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneData.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\assets\awesomeface.png">
+      <Filter>assets</Filter>
+    </Image>
+    <Image Include="src\assets\floor.png">
+      <Filter>assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="programs\sprite.frag">
+      <Filter>programs</Filter>
+    </None>
+    <None Include="programs\sprite.vert">
+      <Filter>programs</Filter>
+    </None>
+    <None Include="programs\debug.frag">
+      <Filter>programs</Filter>
+    </None>
+    <None Include="programs\debug.vert">
+      <Filter>programs</Filter>
+    </None>
+  </ItemGroup>
+</Project>
